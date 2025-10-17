@@ -1,50 +1,42 @@
-# [PROJECT_NAME] Constitution
+<!--
+Sync Impact Report:
+- Version change: none -> 1.0.0
+- Modified principles:
+  - `[PRINCIPLE_1_NAME]` -> `I. Code Quality`
+  - `[PRINCIPLE_2_NAME]` -> `II. Testing Standards`
+  - `[PRINCIPLE_3_NAME]` -> `III. User Experience Consistency`
+  - `[PRINCIPLE_4_NAME]` -> `IV. Performance Requirements`
+- Added sections: `Development Workflow`
+- Removed sections: `[PRINCIPLE_5_NAME]`
+- Templates requiring updates:
+  - `.specify/templates/plan-template.md` (✅ updated)
+  - `.specify/templates/spec-template.md` (✅ updated)
+  - `.specify/templates/tasks-template.md` (✅ updated)
+- Follow-up TODOs: None
+-->
+# Forest Focus Constitution
 <!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Code Quality
+Code must be clean, maintainable, and well-documented. All code should adhere to established coding standards and best practices.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. Testing Standards
+Comprehensive testing is mandatory. This includes unit, integration, and end-to-end tests to ensure reliability and correctness. Test-Driven Development (TDD) is strongly encouraged.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. User Experience Consistency
+A consistent and intuitive user experience is paramount. All user-facing components and interactions must adhere to the project's design system and UX guidelines.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. Performance Requirements
+The application must meet defined performance benchmarks. Code should be optimized for speed and efficiency to ensure a responsive user experience.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+## Development Workflow
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
-
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
-
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
-
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+All code changes must be submitted through a pull request and receive at least one approval from another team member before being merged.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+This constitution is the single source of truth for project standards. Any amendments must be proposed and agreed upon by the team, with a clear migration plan for existing code if necessary.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: 2025-10-16 | **Last Amended**: 2025-10-16
