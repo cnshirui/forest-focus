@@ -1,13 +1,13 @@
 <!--
 Sync Impact Report:
-- Version change: none -> 1.0.0
+- Version change: 1.0.0 -> 2.0.0
 - Modified principles:
-  - `[PRINCIPLE_1_NAME]` -> `I. Code Quality`
-  - `[PRINCIPLE_2_NAME]` -> `II. Testing Standards`
-  - `[PRINCIPLE_3_NAME]` -> `III. User Experience Consistency`
-  - `[PRINCIPLE_4_NAME]` -> `IV. Performance Requirements`
-- Added sections: `Development Workflow`
-- Removed sections: `[PRINCIPLE_5_NAME]`
+  - `I. Code Quality` -> `I. Simplicity and Offline-First`
+  - `II. Testing Standards` -> `II. Test-First Development`
+  - `III. User Experience Consistency` -> `III. Performance`
+  - `IV. Performance Requirements` -> `IV. Accessibility`
+- Added sections: None
+- Removed sections: None
 - Templates requiring updates:
   - `.specify/templates/plan-template.md` (✅ updated)
   - `.specify/templates/spec-template.md` (✅ updated)
@@ -19,17 +19,17 @@ Sync Impact Report:
 
 ## Core Principles
 
-### I. Code Quality
-Code must be clean, maintainable, and well-documented. All code should adhere to established coding standards and best practices.
+### I. Simplicity and Offline-First
+The iOS app must be radically simple and fully functional offline. Complexity must be justified and approved.
 
-### II. Testing Standards
-Comprehensive testing is mandatory. This includes unit, integration, and end-to-end tests to ensure reliability and correctness. Test-Driven Development (TDD) is strongly encouraged.
+### II. Test-First Development
+All new features and bug fixes must be implemented using Test-Driven Development (TDD). No production code is written without a failing test.
 
-### III. User Experience Consistency
-A consistent and intuitive user experience is paramount. All user-facing components and interactions must adhere to the project's design system and UX guidelines.
+### III. Performance
+The application must be highly performant, with all animations running at a consistent 60fps and a cold start time of less than 2 seconds.
 
-### IV. Performance Requirements
-The application must meet defined performance benchmarks. Code should be optimized for speed and efficiency to ensure a responsive user experience.
+### IV. Accessibility
+The app must be accessible to everyone. Full support for VoiceOver and Dynamic Type is non-negotiable.
 
 ## Development Workflow
 
@@ -39,4 +39,4 @@ All code changes must be submitted through a pull request and receive at least o
 
 This constitution is the single source of truth for project standards. Any amendments must be proposed and agreed upon by the team, with a clear migration plan for existing code if necessary.
 
-**Version**: 1.0.0 | **Ratified**: 2025-10-16 | **Last Amended**: 2025-10-16
+**Version**: 2.0.0 | **Ratified**: 2025-10-16 | **Last Amended**: 2025-10-16
