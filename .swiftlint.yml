@@ -1,0 +1,20 @@
+disabled_rules:
+  - trailing_whitespace
+opt_in_rules:
+  - empty_count
+  - empty_string
+  - explicit_init
+  - fatal_error_message
+  - force_cast
+  - force_try
+  - implicitly_unwrapped_optional
+  - redundant_nil_coalescing
+  - strict_fileprivate
+  - unused_closure_parameter
+  - unused_optional_binding
+line_length:
+  warning: 150
+  error: 200
+file_length:
+  warning: 500
+  error: 1200

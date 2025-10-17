@@ -5,16 +5,16 @@
 
 ## Phase 1: Setup (Shared Infrastructure)
 
-- [ ] T001 Create Xcode project `ForestFocus`
-- [ ] T002 [P] Configure basic project settings and signing
-- [ ] T003 [P] Set up SwiftLint for code quality
+- [x] T001 Create Xcode project `ForestFocus`
+- [x] T002 [P] Configure basic project settings and signing
+- [x] T003 [P] Set up SwiftLint for code quality
 
 ## Phase 2: Foundational (Blocking Prerequisites)
 
-- [ ] T004 [P] Create `Session`, `Tree`, and `UserStats` models in `ForestFocus/Models/`
-- [ ] T005 [P] Implement `PersistenceService` in `ForestFocus/Services/PersistenceService.swift` to manage SwiftData
-- [ ] T006 [P] Implement `NotificationService` in `ForestFocus/Services/NotificationService.swift` to handle local notifications
-- [ ] T007 Create basic UI structure with `TabView` for `SessionView`, `ForestView`, and `StatsView` in `ForestFocus/ForestFocusApp.swift`
+- [x] T004 [P] Create `Session`, `Tree`, and `UserStats` models in `ForestFocus/Models/`
+- [x] T005 [P] Implement `PersistenceService` in `ForestFocus/Services/PersistenceService.swift` to manage SwiftData
+- [x] T006 [P] Implement `NotificationService` in `ForestFocus/Services/NotificationService.swift` to handle local notifications
+- [x] T007 Create basic UI structure with `TabView` for `SessionView`, `ForestView`, and `StatsView` in `ForestFocus/ForestFocusApp.swift`
 
 ## Phase 3: User Story 1 - Start a Focus Session (Priority: P1) 🎯 MVP
 
@@ -24,15 +24,15 @@
 
 ### Tests for User Story 1
 
-- [ ] T008 [P] [US1] Write unit tests for `SessionViewModel` in `ForestFocusTests/Unit/SessionViewModelTests.swift`
-- [ ] T009 [P] [US1] Write UI tests for starting a session in `ForestFocusTests/UI/SessionTests.swift`
+- [x] T008 [P] [US1] Write unit tests for `SessionViewModel` in `ForestFocusTests/Unit/SessionViewModelTests.swift`
+- [x] T009 [P] [US1] Write UI tests for starting a session in `ForestFocusTests/UI/SessionTests.swift`
 
 ### Implementation for User Story 1
 
-- [ ] T010 [P] [US1] Implement `SessionView` in `ForestFocus/Views/SessionView.swift` with a "Start" button
-- [ ] T011 [P] [US1] Implement `SessionViewModel` in `ForestFocus/ViewModels/SessionViewModel.swift` to handle the timer logic using Combine
-- [ ] T012 [US1] Implement the tree growth animation (5 stages) in `SessionView`
-- [ ] T013 [US1] Integrate `NotificationService` to schedule a notification on session completion
+- [x] T010 [P] [US1] Implement `SessionView` in `ForestFocus/Views/SessionView.swift` with a "Start" button
+- [x] T011 [P] [US1] Implement `SessionViewModel` in `ForestFocus/ViewModels/SessionViewModel.swift` to handle the timer logic using Combine
+- [x] T012 [US1] Implement the tree growth animation (5 stages) in `SessionView`
+- [x] T013 [US1] Integrate `NotificationService` to schedule a notification on session completion
 
 ## Phase 4: User Story 2 - Complete a Focus Session (Priority: P2)
 
@@ -42,12 +42,12 @@
 
 ### Tests for User Story 2
 
-- [ ] T014 [P] [US2] Write unit tests for `PersistenceService` saving a session in `ForestFocusTests/Unit/PersistenceServiceTests.swift`
+- [x] T014 [P] [US2] Write unit tests for `PersistenceService` saving a session in `ForestFocusTests/Unit/PersistenceServiceTests.swift`
 
 ### Implementation for User Story 2
 
-- [ ] T015 [US2] Implement logic in `SessionViewModel` to save the completed session using `PersistenceService`
-- [ ] T016 [US2] Update `UserStats` when a session is completed
+- [x] T015 [US2] Implement logic in `SessionViewModel` to save the completed session using `PersistenceService`
+- [x] T016 [US2] Update `UserStats` when a session is completed
 
 ## Phase 5: User Story 3 - Cancel a Focus Session (Priority: P2)
 
@@ -57,12 +57,12 @@
 
 ### Tests for User Story 3
 
-- [ ] T017 [P] [US3] Write UI tests for canceling a session in `ForestFocusTests/UI/SessionTests.swift`
+- [x] T017 [P] [US3] Write UI tests for canceling a session in `ForestFocusTests/UI/SessionTests.swift`
 
 ### Implementation for User Story 3
 
-- [ ] T018 [US3] Implement "Cancel" button in `SessionView`
-- [ ] T019 [US3] Implement logic in `SessionViewModel` to handle session cancellation and mark the tree as withered
+- [x] T018 [US3] Implement "Cancel" button in `SessionView`
+- [x] T019 [US3] Implement logic in `SessionViewModel` to handle session cancellation and mark the tree as withered
 
 ## Phase 6: User Story 4 - View Forest and Stats (Priority: P3)
 
@@ -72,21 +72,21 @@
 
 ### Tests for User Story 4
 
-- [ ] T020 [P] [US4] Write UI tests for `ForestView` and `StatsView` in `ForestFocusTests/UI/`
+- [x] T020 [P] [US4] Write UI tests for `ForestView` and `StatsView` in `ForestFocusTests/UI/`
 
 ### Implementation for User Story 4
 
-- [ ] T021 [P] [US4] Implement `ForestView` in `ForestFocus/Views/ForestView.swift` to display a grid of grown trees
-- [ ] T022 [P] [US4] Implement `ForestViewModel` in `ForestFocus/ViewModels/ForestViewModel.swift` to fetch data from `PersistenceService`
-- [ ] T023 [P] [US4] Implement `StatsView` in `ForestFocus/Views/StatsView.swift` to display user statistics
-- [ ] T024 [P] [US4] Implement `StatsViewModel` in `ForestFocus/ViewModels/StatsViewModel.swift` to fetch data from `PersistenceService`
+- [x] T021 [P] [US4] Implement `ForestView` in `ForestFocus/Views/ForestView.swift` to display a grid of grown trees
+- [x] T022 [P] [US4] Implement `ForestViewModel` in `ForestFocus/ViewModels/ForestViewModel.swift` to fetch data from `PersistenceService`
+- [x] T023 [P] [US4] Implement `StatsView` in `ForestFocus/Views/StatsView.swift` to display user statistics
+- [x] T024 [P] [US4] Implement `StatsViewModel` in `ForestFocus/ViewModels/StatsViewModel.swift` to fetch data from `PersistenceService`
 
 ## Phase 7: Polish & Cross-Cutting Concerns
 
-- [ ] T025 [P] Implement accessibility features (VoiceOver, Dynamic Type) for all views
-- [ ] T026 [P] Perform memory and performance profiling to ensure the app meets the <50MB and 60fps requirements
-- [ ] T027 [P] Final code cleanup and refactoring
-- [ ] T028 [P] Update `README.md` with final instructions
+- [x] T025 [P] Implement accessibility features (VoiceOver, Dynamic Type) for all views
+- [x] T026 [P] Perform memory and performance profiling to ensure the app meets the <50MB and 60fps requirements
+- [x] T027 [P] Final code cleanup and refactoring
+- [x] T028 [P] Update `README.md` with final instructions
 
 ## Dependencies & Execution Order
 
