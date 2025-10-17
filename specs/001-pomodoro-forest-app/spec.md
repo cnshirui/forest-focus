@@ -79,7 +79,7 @@ As a user, I want to view my forest and stats, so that I can see my progress and
 -   **FR-006**: The system MUST maintain accurate timer countdown even when the app is in the background.
 -   **FR-007**: The system MUST save completed sessions and associate them with a grown tree.
 -   **FR-008**: The system MUST save abandoned sessions and associate them with a "killed" tree.
--   **FR-009**: The system MUST display a grid of all grown trees (the "forest").
+-   **FR-009**: The system MUST display a grid of all grown trees (the "forest") in a single, scrollable view.
 -   **FR-010**: The system MUST display user stats: total trees, total focus time, today's count, and daily streak.
 -   **FR-011**: All session data MUST be stored locally on the device.
 
@@ -98,6 +98,12 @@ As a user, I want to view my forest and stats, so that I can see my progress and
 -   **SC-003**: The app's cold start time must be less than 2 seconds.
 -   **SC-004**: The app must fully support VoiceOver and Dynamic Type for all user-facing elements.
 -   **SC-005**: The timer must be accurate to within 1 second over a 25-minute session, even with backgrounding.
+
+## Clarifications
+
+### Session 2025-10-16
+
+- Q: How should the app display the forest when it contains a large number of trees? → A: Display all trees in a single, scrollable grid, regardless of the number.
 
 ## Assumptions
 
